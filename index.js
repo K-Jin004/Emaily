@@ -11,7 +11,7 @@ const app = express();
 // res.send({}): immediately send some JSON back to who ever made this request
 //接受localhost:8432/ 请求时，发送hi there
 app.get('/', (req, res) => {
-    res.send({hi: 'there'});
+    res.send({hi: 'there, changed the file, bye!'});
 });
 
 const PORT = process.env.PORT || 8432;
